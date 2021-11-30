@@ -432,14 +432,20 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
+    background-image: url("../img/drew-coffman-jUOaONoXJQk-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .pricing-cards-wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 5rem;
 }
 
@@ -537,18 +543,34 @@ body {
 
 .btn-free {
     background-color: #0472b6;
+    cursor: pointer;
 }
 
 .btn-basic {
     background-color: #d45c3b;
+    cursor: pointer;
 }
 
 .btn-standard {
     background-color: #e452ce;
+    cursor: pointer;
 }
 
 .btn-premium {
     background-color: #FA0874;
+    cursor: pointer;
+}
+
+.section-heading-section-3 {
+    font-weight: 900;
+    font-size: 8rem;
+    color: #ddd;
+    text-shadow: .3rem .3rem 0.6rem #000000;
+
+    // width: 40%;
+    span {
+        color: #f2761e;
+    }
 }
 
 // .pricing-card-back {
@@ -565,23 +587,23 @@ body {
 // }
 
 
-.back-free {
-    background: linear-gradient(to right, #005D98, #63a0bb);
-}
+// .back-free {
+//     background: linear-gradient(to right, #005D98, #63a0bb);
+// }
 
-.back-basic {
-    background: linear-gradient(to right, #bd5a3f, #FFCC4B);
-}
+// .back-basic {
+//     background: linear-gradient(to right, #bd5a3f, #FFCC4B);
+// }
 
-.back-standard {
-    background: linear-gradient(to right, #5c6dd8, #e452ce);
-}
+// .back-standard {
+//     background: linear-gradient(to right, #5c6dd8, #e452ce);
+// }
 
-.back-premium {
-    background: linear-gradient(to right, #FA0874, #FFC446);
-}
+// .back-premium {
+//     background: linear-gradient(to right, #FA0874, #FFC446);
+// }
 
-.pricing-card-back a {
-    font-size: 2.5rem;
-    color: white;
-}
+// .pricing-card-back a {
+//     font-size: 2.5rem;
+//     color: white;
+// }

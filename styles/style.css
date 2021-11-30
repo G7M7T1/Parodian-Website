@@ -544,10 +544,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
+  background-image: url("../img/drew-coffman-jUOaONoXJQk-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .pricing-cards-wrapper {
@@ -555,9 +566,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 5rem;
 }
 
@@ -672,42 +683,32 @@ body {
 
 .btn-free {
   background-color: #0472b6;
+  cursor: pointer;
 }
 
 .btn-basic {
   background-color: #d45c3b;
+  cursor: pointer;
 }
 
 .btn-standard {
   background-color: #e452ce;
+  cursor: pointer;
 }
 
 .btn-premium {
   background-color: #FA0874;
+  cursor: pointer;
 }
 
-.back-free {
-  background: -webkit-gradient(linear, left top, right top, from(#005D98), to(#63a0bb));
-  background: linear-gradient(to right, #005D98, #63a0bb);
+.section-heading-section-3 {
+  font-weight: 900;
+  font-size: 8rem;
+  color: #ddd;
+  text-shadow: .3rem .3rem 0.6rem #000000;
 }
 
-.back-basic {
-  background: -webkit-gradient(linear, left top, right top, from(#bd5a3f), to(#FFCC4B));
-  background: linear-gradient(to right, #bd5a3f, #FFCC4B);
-}
-
-.back-standard {
-  background: -webkit-gradient(linear, left top, right top, from(#5c6dd8), to(#e452ce));
-  background: linear-gradient(to right, #5c6dd8, #e452ce);
-}
-
-.back-premium {
-  background: -webkit-gradient(linear, left top, right top, from(#FA0874), to(#FFC446));
-  background: linear-gradient(to right, #FA0874, #FFC446);
-}
-
-.pricing-card-back a {
-  font-size: 2.5rem;
-  color: white;
+.section-heading-section-3 span {
+  color: #f2761e;
 }
 /*# sourceMappingURL=style.css.map */
