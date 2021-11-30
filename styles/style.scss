@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.navbar {
+    width: 100%;
+    height: 8rem;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    overflow: hidden;
+    transition: all 0.6s;
+    animation: animateNavbar 1s 0.5s forwards;
+}
+
+@keyframes animateNavbar {
+    0% {
+        top: -8rem;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+
+.navbar.change {
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+}
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+}
+
+.logo a {
+    font-size: 2.5rem;
+}
+
+.logo a img {
+    height: 4rem;
+}
+
+.nav-list {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+.change .nav-list {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s 0.5s;
+}
+
+.nav-link {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    color: white;
+    font-weight: bold;
+    margin: 2rem;
+    transition: color 0.6s;
+}
+
+.nav-link:hover {
+    color: #9e0e09;
+}
+
+.menu {
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    z-index: 20;
+    top: 2rem;
+    right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #eee;
+    transition: transform 0.3s;
+}
+
+.line-1 {
+    width: 50%;
+}
+
+.change .line-1 {
+    transform: translate(100%, 1rem) rotate(-35deg);
+    transform-origin: right;
+}
+
+.line-3 {
+    width: 50%;
+    margin-left: auto;
+}
+
+.change .line-3 {
+    transform: translateY(-1rem) rotate(35deg);
+    transform-origin: right;
+}
+
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/thom-holmes-RqASow2Y6Os-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.banner-heading {
+    margin-bottom: 4rem;
+    height: 20rem;
+    perspective: 50rem;
+    overflow: hidden;
+}
+
+.banner-heading span {
+    font-size: 12rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0.3rem 0.3rem 0.6rem rgba($color: #000000, $alpha: 0.7);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateZ(8rem);
+    opacity: 0;
+    letter-spacing: 3rem;
+}
+
+.heading-1 {
+    animation: animateHeading 12s 3s infinite;
+}
+
+.heading-2 {
+    animation: animateHeading 12s 6s infinite;
+}
+
+.heading-3 {
+    animation: animateHeading 12s 9s infinite;
+}
+
+.heading-4 {
+    animation: animateHeading 12s 12s infinite;
+}
+
+@keyframes animateHeading {
+    0% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 3rem;
+    }
+
+    3% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1.5rem;
+    }
+
+    25% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1.5rem;
+    }
+
+    28% {
+        transform: translateZ(8);
+        opacity: 0;
+        letter-spacing: 3rem;
+    }
+
+    100% {
+        transform: translateZ(8);
+        opacity: 0;
+        letter-spacing: 3rem;
+    }
+}
+
+
+.banner-paragraph {
+    font-size: 3rem;
+    font-weight: 400;
+    // text-transform: uppercase;
+    color: #fff;
+    // background-color: rgba($color: #000000, $alpha: 0.6);
+    width: 35%;
+    margin: 0 auto 4rem;
+    padding: 1rem 1rem;
+    // box-shadow: 1rem 1rem 5rem rgba($color: #000000, $alpha: 0.5);
+    text-shadow: 0.3rem 0.3rem 0.6rem rgba($color: #000000, $alpha: 0.7);
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeAnimation 1s 2s forwards;
+}
+
+.banner-btn {
+    width: 30rem;
+    height: 6rem;
+    margin-top: 5rem;
+    background: linear-gradient(to right, #ff6a00, #ee7118);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: 0.1rem solid #414141;
+    cursor: pointer;
+    // box-shadow: 1rem 2rem 3rem rgba($color: #000000, $alpha: 0.5);
+    // text-shadow: 0.6rem 0.3rem 0.2rem rgba($color: #ffffff, $alpha: 0.4);
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeAnimation 1s 1.5s forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transform: skewX(-30deg);
+    transition: left 0.5s;
+}
+
+.banner-btn:hover::before {
+    left: 100%;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
