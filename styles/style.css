@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  color: white;
   background-color: #000000;
 }
 
@@ -535,5 +536,189 @@ body {
       align-self: flex-end;
   font-size: 5rem;
   margin-bottom: 2rem;
+}
+
+.section-3 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.pricing-cards-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.pricing-card {
+  width: 28rem;
+  height: 45rem;
+  background-color: #181b1d;
+  border-radius: 1rem;
+}
+
+.pricing-card-front {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pricing-card-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  width: 100%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2rem;
+}
+
+.heading-free {
+  background: -webkit-gradient(linear, left top, right top, from(#005D98), to(#63a0bb));
+  background: linear-gradient(to right, #005D98, #63a0bb);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.heading-basic {
+  background: -webkit-gradient(linear, left top, right top, from(#bd5a3f), to(#FFCC4B));
+  background: linear-gradient(to right, #bd5a3f, #FFCC4B);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.heading-standard {
+  background: -webkit-gradient(linear, left top, right top, from(#5c6dd8), to(#e452ce));
+  background: linear-gradient(to right, #5c6dd8, #e452ce);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.heading-premium {
+  background: -webkit-gradient(linear, left top, right top, from(#FA0874), to(#FFC446));
+  background: linear-gradient(to right, #FA0874, #FFC446);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.pricing-card-price {
+  font-size: 7rem;
+}
+
+.pricing-card-list li {
+  margin-bottom: 0.5rem;
+}
+
+.list-free li {
+  color: #0472b6;
+}
+
+.list-basic li {
+  color: #d45c3b;
+}
+
+.list-standard li {
+  color: #e452ce;
+}
+
+.list-premium li {
+  color: #FA0874;
+}
+
+.pricing-card-list i {
+  font-size: 2rem;
+  width: 3rem;
+}
+
+.pricing-card-list span {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.pricing-card-btn {
+  width: 18rem;
+  height: 5rem;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-free {
+  background-color: #0472b6;
+}
+
+.btn-basic {
+  background-color: #d45c3b;
+}
+
+.btn-standard {
+  background-color: #e452ce;
+}
+
+.btn-premium {
+  background-color: #FA0874;
+}
+
+.pricing-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 1rem;
+}
+
+.back-free {
+  background-color: #0472b6;
+}
+
+.back-basic {
+  background-color: #d45c3b;
+}
+
+.back-standard {
+  background-color: #e452ce;
+}
+
+.back-premium {
+  background-color: #FA0874;
 }
 /*# sourceMappingURL=style.css.map */
