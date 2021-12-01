@@ -554,7 +554,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
   background-image: url("../img/drew-coffman-jUOaONoXJQk-unsplash.jpg");
   background-position: center;
   background-size: cover;
@@ -566,17 +565,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5rem;
+  padding-top: 5rem;
 }
 
 .pricing-card {
-  width: 28rem !important;
-  height: 45rem !important;
+  width: 28rem;
+  height: 45rem;
   background-color: #181b1d;
   border-radius: 1rem;
+  margin: 1rem;
 }
 
 .pricing-card-front {
@@ -684,21 +686,105 @@ body {
 .btn-free {
   background-color: #0472b6;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-free::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+.btn-free:hover::before {
+  left: 100%;
 }
 
 .btn-basic {
   background-color: #d45c3b;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-basic::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+.btn-basic:hover::before {
+  left: 100%;
 }
 
 .btn-standard {
   background-color: #e452ce;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-standard::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+.btn-standard:hover::before {
+  left: 100%;
 }
 
 .btn-premium {
   background-color: #FA0874;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-premium::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+.btn-premium:hover::before {
+  left: 100%;
 }
 
 .section-heading-section-3 {
