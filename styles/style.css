@@ -378,7 +378,7 @@ body {
 
 .section-2 {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   background: url("../img/nasim-keshmiri-t-afILNf3Zg-unsplash.jpg");
   background-position: 20% 60%;
   background-size: cover;
@@ -808,7 +808,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10rem;
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-wrapper {
@@ -829,13 +836,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .contact-details div {
-  width: 25rem;
+  width: 100%;
   text-align: center;
-  margin: 4rem;
+  margin: 2rem;
 }
 
 .contact-details i {
@@ -862,7 +869,7 @@ body {
 }
 
 .contact-form {
-  width: 70rem;
+  width: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -934,5 +941,66 @@ body {
 .copyright {
   font-size: 2rem;
   color: #ddd;
+}
+
+@media screen and (max-width: 1100px) {
+  .banner-heading span {
+    font-size: 10rem;
+  }
+  .pricing-card {
+    width: 25rem;
+    height: 40rem;
+    background-color: #181b1d;
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .banner-heading span {
+    font-size: 8rem;
+  }
+  .section-heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .section-2 {
+    height: 150vh;
+  }
+  .section-2-bg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0rem;
+  }
+  .section-heading {
+    font-weight: 900;
+    font-size: 6rem;
+    color: #ddd;
+    margin-right: 0rem;
+  }
+  .section-2-part-1 {
+    width: 80%;
+    height: 30%;
+  }
+  .section-2-part-2 {
+    width: 80%;
+    height: 65%;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .banner-heading span {
+    font-size: 7rem;
+  }
+  .contact-form {
+    width: 550px;
+  }
+  .contact-wrapper {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
